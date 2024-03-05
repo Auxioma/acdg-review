@@ -76,11 +76,13 @@
 <?php include '_partials/footer.php'; ?>
 <script src="https://www.google.com/recaptcha/api.js?render=6LetgokpAAAAAHO-JNwaDzBsY2Wneo7DvrYhkG-G"></script>
 <script>
-grecaptcha.ready(function() {
-    grecaptcha.execute('6LetgokpAAAAAHO-JNwaDzBsY2Wneo7DvrYhkG-G', {action: 'homepage'}).then(function(token) {
-        document.getElementById('recaptchaResponse').value = token
+    grecaptcha.ready(function() {
+        grecaptcha.execute('6LetgokpAAAAAHO-JNwaDzBsY2Wneo7DvrYhkG-G', {
+            action: 'homepage'
+        }).then(function(token) {
+            document.getElementById('recaptchaResponse').value = token
+        });
     });
-});
 </script>
 </body>
 </html>
